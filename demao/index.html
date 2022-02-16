@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div  class="frm">
+        <h1 style="color: white; font: bold;"> Student Enrollment Form</h1><br><br>
+    <form method="post" name="sample"  class="inp">
+        Application Date: <input type="date" name="date"> <br> <br>
+        Name: <input type="text" name="name"> <br><br>
+        Roll no:<input type="text" name="rollNo"><br> <br>
+        Branch: <input type="text" name="branch"> <br> <br>
+        Year:<input type="text" name="year"> <br> <br>
+        Email: <input type="text" name="email"> <br> <br>
+        Website: <input type="website" name="website"><br> <br>
+        Gender: <input type="radio" name="gender" value="Female"> Female 
+                 <input type="radio" name="gender" value="Male"> Male 
+                 <input type="radio" name="gender" value="Other"> Other <br><br>
+                 
+                
+        <br> <br>
+        <input type="button" name="add" value=" Add"  class="btn" onclick="addStudent();">
+        <input type="reset" name="reset" value="clear" class="btn1">
+        
+        
+
+
+
+    </form>
+    </div>
+
+
+    <div  class="table">
+
+        <table id="tbl" border="2" class="tab">
+
+            <h1 style="color: white; font: bold; padding-top: 20px;"> Student Databse</h1>
+            <thead >
+                <th>  Application Date</th>
+                <th> Name</th>
+                <th> Roll No</th>
+                <th>  Branch</th>
+                <th>  Year</th>
+                <th> Email</th>
+                <th> Website</th>
+                <th> Gender</th>
+                
+                
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <script type="text/javascript">
+        
+        
+        function addStudent()
+        {
+            var date= document.sample.date.value;
+            var name= document.sample.name.value;
+            var rollNo= document.sample.rollNo.value;
+            var branch = document.sample.branch.value;
+            var year= document.sample.year.value;
+            var email= document.sample.email.value;
+            var website= document.sample.website.value;
+            var gender= document.sample.gender.value;
+            
+           
+            
+            
+            var tr= document.createElement('tr');
+            
+
+            var td1 = tr.appendChild(document.createElement('td'));
+            var td2 = tr.appendChild(document.createElement('td'));
+            var td3 = tr.appendChild(document.createElement('td'));
+            var td4 = tr.appendChild(document.createElement('td'));
+            var td5 = tr.appendChild(document.createElement('td'));
+            var td6 = tr.appendChild(document.createElement('td'));
+            var td7 = tr.appendChild(document.createElement('td'));
+            var td8 = tr.appendChild(document.createElement('td'));
+           
+            
+            
+
+
+            td1.innerHTML=date;
+            td2.innerHTML=rollNo;
+            td3.innerHTML= branch;
+            td4.innerHTML=year;
+            td5.innerHTML= name;
+            td6.innerHTML= email;
+            td7.innerHTML= website;
+            td8.innerHTML= gender;
+           
+
+            document.getElementById("tbl").appendChild(tr);
+
+
+            
+
+            
+        }
+        
+
+    </script>
+   
+    
+</body>
+</html>

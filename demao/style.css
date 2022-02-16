@@ -1,0 +1,63 @@
+
+.table{
+    
+   
+    padding-left: -60px;
+    text-align: center;
+    background: linear-gradient(45deg,rgb(231, 17, 135),rgb(7, 141, 194)) ;
+    margin-left: 610px;
+    margin-top: -610px;
+    height: 600px;
+    font: bold;
+    
+    border:5px solid black;
+    border-left: none;
+
+
+}
+.frm{
+    
+    
+    background: linear-gradient(45deg,rgb(235, 26, 96),rgb(20, 194, 185));
+    border:black;
+    box-shadow: 1px black;
+    
+    height: 600px;
+    width: 600px;
+    padding-left: -60px;
+    text-align: center;
+    font: bold;
+    display: inline-block;
+    border:5px solid rgb(7, 7, 7);
+    
+
+
+
+}
+.btn{
+    font-size: 20px;
+    color: white;
+    background-color: green;
+}
+.btn1{
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
+.inp
+{
+    color: white;
+    font: bold;
+    font-size: 20px;
+    outline: none;
+    display: inline-block;
+
+}
+ .tab{
+    color: rgb(252, 250, 250);
+    font: bold;
+   
+    outline: none;
+    display: inline-block;
+
+ }
